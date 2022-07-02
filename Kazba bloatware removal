@@ -1,0 +1,32 @@
+Stopping process: HPCommRecovery
+VERBOSE: Process HPCommRecovery stopped.
+Running:
+"C:\Program Files (x86)\InstallShield Installation Information\{6468C4A5-E47E-405F-B675-A70A70983EA6}\setup.exe" /s -s -SMS -w -clon
+e_wait -f1"C:\BRU\hpsureconnect.iss" -removeonly
+Performing: functionHPSureConnectAfterUninstallerStarted
+: Performing the operation "Remove File" on target "c:\BRU\hpsureconnect.iss".
+: Performing the operation "Remove File" on target "C:\BRU\setup.log".
+: Performing the operation "Remove Directory" on target "C:\Program Files\HPCommRecovery\".
+VERBOSE: Performing the operation "Remove File" on target "C:\Program Files\HPCommRecovery\HPCommRecovery.exe".
+: Performing the operation "Remove File" on target "C:\Program Files\HPCommRecovery HPCommRecovery. InstallLog".
+: Performing the operation "Remove File" on target "C:\Program Files\HPCommRecovery\HPCommRecovery. Installstate".
+: ExitCode: -2147213312 HP Sure Connect might not have been removed. Check Programs list if uninstalled. If not reboot and
+try again or manually uninstall. Some applications give exit codes on uninstallation but still uninstall just fine.
+Using QuietUninstallstring
+:
+"C:\ProgramData\Package Cache\{5b1a1d22-bd59-44e0-a954-e2f18ec43a23}\HPEPrintAppSetup.exe" /uninstall /quiet
+HP ePrint SW.
+HP Velocity is being removed. (non-msi)
+:
+"C:\ProgramData\HP\MsiCache\HP Velocity\uninstall.exe" /s
+Removed HP velocity.
+HP Documentation is being removed. (non-msi)
+Running:
+"C:\Program Files\HP\Documentation\Doc_Uninstall.cmd"
+: ExitCode: 1 HP Documentation might not have been removed. Check Programs list if uninstalled. If not reboot and try again
+or manually uninstall. Some applications give exit codes on uninstallation but still uninstall just fine.
+HP ePrint SW is being removed. (msi)
+:
+msiexec.exe /x{03ED1397-7e72-4F6E-A0F0-2994A0A13421} /qn /norestart
+: ExitCode: 1605, This action is only valid for products that are currently installed. Program was already removed.
+HP MAC Address Manager is being removed. (msi)
